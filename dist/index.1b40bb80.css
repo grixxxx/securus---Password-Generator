@@ -1,0 +1,87 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#generateBtn {
+  cursor: pointer;
+  background-color: #2ec4b6;
+  border: none;
+  padding: 1rem 2rem;
+}
+
+body {
+  height: 100vh;
+  color: #fdfffc;
+  background-color: #011627;
+  justify-content: center;
+  align-items: center;
+  font-family: Kanit, sans-serif;
+  display: flex;
+}
+
+main {
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#passForm {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+
+#passForm .textContainer {
+  justify-content: center;
+  gap: 2rem;
+  display: flex;
+}
+
+#passForm .textContainer .inputText {
+  color: #011627;
+  text-align: center;
+  width: min(20vw, 20rem);
+  background-color: #fdfffc;
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=index.1b40bb80.css.map */

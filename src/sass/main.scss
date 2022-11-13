@@ -1,0 +1,48 @@
+@forward "./resets";
+@forward "./buttons";
+@use "colors" as *;
+@use "variables" as *;
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $secondaryClr;
+  color: $primaryClr;
+  font-family: $fontFam;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: $mediumGap;
+
+  h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+}
+
+#passForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: $smallGap;
+
+  .textContainer {
+    display: flex;
+    justify-content: center;
+    gap: $mediumGap;
+
+    .inputText {
+      color: $secondaryClr;
+      background-color: $primaryClr;
+      font-size: 1.2rem;
+      text-align: center;
+      width: min(20vw, 20rem);
+    }
+  }
+}

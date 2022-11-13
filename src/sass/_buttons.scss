@@ -1,0 +1,8 @@
+@use "colors" as *;
+
+#generateBtn {
+  background-color: $accentClr;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
