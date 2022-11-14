@@ -1,5 +1,6 @@
 @forward "./resets";
 @forward "./buttons";
+@forward "./mediaQueries";
 @use "colors" as *;
 @use "variables" as *;
 
@@ -7,7 +8,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: $secondaryClr;
   color: $primaryClr;
   font-family: $fontFam;
@@ -19,9 +20,21 @@ main {
   flex-direction: column;
   gap: $mediumGap;
 
-  h1 {
-    font-weight: 700;
-    font-size: 2.5rem;
+  .mainTitle {
+    text-align: center;
+
+    h1 {
+      font-weight: 700;
+      font-size: clamp(1.5rem, 5vw, 2.5rem);
+      line-height: 1.5;
+    }
+
+    h2 {
+      opacity: 0.5;
+    }
+    span {
+      color: $accentClr;
+    }
   }
 }
 
@@ -35,14 +48,20 @@ main {
   .textContainer {
     display: flex;
     justify-content: center;
-    gap: $mediumGap;
+    gap: $smallGap;
 
     .inputText {
       color: $secondaryClr;
       background-color: $primaryClr;
       font-size: 1.2rem;
       text-align: center;
-      width: min(20vw, 20rem);
+      width: max(5vw, 15rem);
     }
+  }
+
+  input[id="passLength"] {
+    margin-right: $mediumGap;
+    text-align: start;
+    width: 50px;
   }
 }

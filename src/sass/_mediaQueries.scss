@@ -1,0 +1,13 @@
+@use "variables" as *;
+
+@media (width < 750px) {
+  #passForm {
+    .textContainer {
+      flex-direction: column;
+
+      .inputText {
+        padding: 1rem;
+      }
+    }
+  }
+}

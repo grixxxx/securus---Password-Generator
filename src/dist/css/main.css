@@ -134,13 +134,29 @@ table {
   border: none;
   padding: 1rem 2rem;
   cursor: pointer;
+  color: #fdfffc;
+  font-size: 1rem;
+  font-family: "Kanit", sans-serif;
+  transition: all 0.3s ease-in;
+}
+#generateBtn:hover {
+  filter: brightness(2);
+  scale: 0.967;
 }
 
+@media (width < 750px) {
+  #passForm .textContainer {
+    flex-direction: column;
+  }
+  #passForm .textContainer .inputText {
+    padding: 1rem;
+  }
+}
 body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #011627;
   color: #fdfffc;
   font-family: "Kanit", sans-serif;
@@ -152,9 +168,19 @@ main {
   flex-direction: column;
   gap: 2rem;
 }
-main h1 {
+main .mainTitle {
+  text-align: center;
+}
+main .mainTitle h1 {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  line-height: 1.5;
+}
+main .mainTitle h2 {
+  opacity: 0.5;
+}
+main .mainTitle span {
+  color: #2ec4b6;
 }
 
 #passForm {
@@ -167,14 +193,19 @@ main h1 {
 #passForm .textContainer {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 #passForm .textContainer .inputText {
   color: #011627;
   background-color: #fdfffc;
   font-size: 1.2rem;
   text-align: center;
-  width: min(20vw, 20rem);
+  width: max(5vw, 15rem);
+}
+#passForm input[id=passLength] {
+  margin-right: 2rem;
+  text-align: start;
+  width: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

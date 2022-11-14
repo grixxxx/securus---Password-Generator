@@ -1,8 +1,18 @@
 @use "colors" as *;
+@use "variables" as *;
 
 #generateBtn {
   background-color: $accentClr;
   border: none;
   padding: 1rem 2rem;
   cursor: pointer;
+  color: $primaryClr;
+  font-size: 1rem;
+  font-family: $fontFam;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    filter: brightness(2);
+    scale: 0.967;
+  }
 }
