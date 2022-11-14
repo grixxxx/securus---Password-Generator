@@ -45,6 +45,10 @@ main {
   flex-direction: column;
   gap: $smallGap;
 
+  .passIdentifier {
+    display: none;
+  }
+
   .textContainer {
     display: flex;
     justify-content: center;

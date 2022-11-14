@@ -102,6 +102,10 @@ main .mainTitle span {
   display: flex;
 }
 
+#passForm .passIdentifier {
+  display: none;
+}
+
 #passForm .textContainer {
   justify-content: center;
   gap: 1rem;
