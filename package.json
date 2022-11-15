@@ -1,10 +1,10 @@
 {
   "name": "passwordgenerator",
   "version": "1.0.0",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build"
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
@@ -126,5 +126,5 @@
     "xxhash-wasm": "^0.4.2",
     "yaml": "^1.10.2"
   },
-  "description": ""
+  "description": "<h1 align=\"center\">Hi 👋, I'm Delmer John Ballesteros</h1> <h3 align=\"center\">A passionate frontend developer from Philippines</h3> <img align=\"right\" alt=\"Coding\" width=\"400\" src=\"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F54%2Fe3%2F7d%2F54e37d8074ebcde1d96c77d7b2a7f310.gif&f=1&nofb=1&ipt=bf785d354246dc30287486f8b21cb7d14be9a65dcbe1943cf9c17714745375df&ipo=images\">"
 }

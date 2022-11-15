@@ -139,7 +139,7 @@ table {
   font-family: "Kanit", sans-serif;
   transition: all 0.3s ease-in;
 }
-#generateBtn:hover {
+#generateBtn:hover, #generateBtn:focus {
   filter: brightness(2);
   scale: 0.967;
 }
@@ -159,6 +159,7 @@ table {
   opacity: 0.5;
   font-size: 0.8rem;
   margin-left: 0.5rem;
+  font-weight: 300;
 }
 
 @media (width < 750px) {

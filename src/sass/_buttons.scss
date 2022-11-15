@@ -11,7 +11,8 @@
   font-family: $fontFam;
   transition: all 0.3s ease-in;
 
-  &:hover {
+  &:hover,
+  &:focus {
     filter: brightness(2);
     scale: 0.967;
   }
@@ -32,6 +33,7 @@
       opacity: 0.5;
       font-size: 0.8rem;
       margin-left: $verySmallGap;
+      font-weight: 300;
     }
   }
 }
