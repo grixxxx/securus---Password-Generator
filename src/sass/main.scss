@@ -63,9 +63,12 @@ main {
     }
   }
 
-  input[id="passLength"] {
-    margin-right: $mediumGap;
-    text-align: start;
-    width: 50px;
+  .passLengthContainer {
+    display: flex;
+    align-items: center;
+
+    input[id="passLength"] {
+      margin-right: $smallGap;
+    }
   }
 }

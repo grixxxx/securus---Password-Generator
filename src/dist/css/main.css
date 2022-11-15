@@ -205,10 +205,12 @@ main .mainTitle span {
   text-align: center;
   width: max(5vw, 15rem);
 }
-#passForm input[id=passLength] {
-  margin-right: 2rem;
-  text-align: start;
-  width: 50px;
+#passForm .passLengthContainer {
+  display: flex;
+  align-items: center;
+}
+#passForm .passLengthContainer input[id=passLength] {
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

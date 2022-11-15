@@ -120,10 +120,13 @@ main .mainTitle span {
   font-size: 1.2rem;
 }
 
-#passForm input[id="passLength"] {
-  text-align: start;
-  width: 50px;
-  margin-right: 2rem;
+#passForm .passLengthContainer {
+  align-items: center;
+  display: flex;
+}
+
+#passForm .passLengthContainer input[id="passLength"] {
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=index.1b40bb80.css.map */
