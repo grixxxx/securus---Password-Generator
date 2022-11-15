@@ -17,14 +17,21 @@
   }
 }
 
-.checkboxes {
-  display: flex;
-  gap: $smallGap;
+.checkboxesContainer {
   align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: $smallGap;
+  margin-top: $mediumGap;
 
-  span {
-    opacity: 0.5;
-    font-size: 0.8rem;
-    margin-left: $verySmallGap;
+  .checkboxes {
+    display: flex;
+    gap: $smallGap;
+
+    span {
+      opacity: 0.5;
+      font-size: 0.8rem;
+      margin-left: $verySmallGap;
+    }
   }
 }

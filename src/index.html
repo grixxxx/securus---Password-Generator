@@ -23,36 +23,49 @@
       </section>
 
       <section id="passForm">
-        <p class="passIdentifier"></p>
         <div class="textContainer">
           <input class="inputText" type="text" disabled />
 
           <button id="generateBtn">GENERATE</button>
         </div>
 
-        <div class="passLengthContainer">
+        <!-- <div class="passLengthContainer">
           <input id="passLength" type="range" min="8" max="32" value="12" />
-          <p class="passLengthValue">characters</p>
-        </div>
+          <p class="passLengthValue"></p>
+        </div> -->
 
-        <div class="checkboxes">
-          <input
-            type="checkbox"
-            id="checkboxLowLetter"
-            value="qwertyuiopasdfghjklzxcvbnm"
-            checked
-          />
-          <p>Include Small Alphabets <span>(abcde)</span></p>
-        </div>
-
-        <div class="checkboxes">
-          <input type="checkbox" id="checkboxNum" value="1234567890" />
-          <p>Include Numbers <span>(123456)</span></p>
-        </div>
-        <div class="checkboxes">
-          <input type="checkbox" id="checkboxSym" value="!@#$%^&*()" />
-          <p>Include Symbols <span>(!@#$%^)</span></p>
-        </div>
+        <section class="checkboxesContainer">
+          <div class="passLengthContainer">
+            <input id="passLength" type="range" min="8" max="32" value="12" />
+            <p class="passLengthValue"></p>
+          </div>
+          <div class="checkboxes">
+            <input
+              type="checkbox"
+              id="checkboxLowLetter"
+              value="qwertyuiopasdfghjklzxcvbnm"
+              checked
+            />
+            <p>Include Lowercase Letters <span>(abcde)</span></p>
+          </div>
+          <div class="checkboxes">
+            <input
+              type="checkbox"
+              id="checkboxUpperLetter"
+              value="QWERTYUIOPASDFGHJKLZXCVBNM"
+              checked
+            />
+            <p>Include Uppercase Letters <span>(ABCDE)</span></p>
+          </div>
+          <div class="checkboxes">
+            <input type="checkbox" id="checkboxNum" value="1234567890" />
+            <p>Include Numbers <span>(123456)</span></p>
+          </div>
+          <div class="checkboxes">
+            <input type="checkbox" id="checkboxSym" value="!@#$%^&*()" />
+            <p>Include Symbols <span>(!@#$%^)</span></p>
+          </div>
+        </section>
       </section>
     </main>
 
