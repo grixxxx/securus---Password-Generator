@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/grixxxx/passwordGenerator#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
     "parcel": "^2.8.0",
     "sass": "^1.56.1"
   },
@@ -76,8 +77,6 @@
     "js-tokens": "^4.0.0",
     "json-parse-even-better-errors": "^2.3.1",
     "json5": "^2.2.1",
-    "lightningcss": "^1.16.1",
-    "lightningcss-win32-x64-msvc": "^1.16.1",
     "lines-and-columns": "^1.2.4",
     "lmdb": "^2.5.2",
     "mdn-data": "^2.0.14",
@@ -125,6 +124,5 @@
     "weak-lru-cache": "^1.2.2",
     "xxhash-wasm": "^0.4.2",
     "yaml": "^1.10.2"
-  },
-  "description": "<h1 align=\"center\">Hi 👋, I'm Delmer John Ballesteros</h1> <h3 align=\"center\">A passionate frontend developer from Philippines</h3> <img align=\"right\" alt=\"Coding\" width=\"400\" src=\"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F54%2Fe3%2F7d%2F54e37d8074ebcde1d96c77d7b2a7f310.gif&f=1&nofb=1&ipt=bf785d354246dc30287486f8b21cb7d14be9a65dcbe1943cf9c17714745375df&ipo=images\">"
+  }
 }
