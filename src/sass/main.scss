@@ -30,6 +30,7 @@ main {
     }
 
     h2 {
+      font-size: clamp(0.7rem, 3vw, 1rem);
       opacity: 0.5;
     }
     span {

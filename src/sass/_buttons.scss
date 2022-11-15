@@ -16,3 +16,15 @@
     scale: 0.967;
   }
 }
+
+.checkboxes {
+  display: flex;
+  gap: $smallGap;
+  align-self: flex-start;
+
+  span {
+    opacity: 0.5;
+    font-size: 0.8rem;
+    margin-left: $verySmallGap;
+  }
+}

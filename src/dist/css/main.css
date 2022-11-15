@@ -144,6 +144,17 @@ table {
   scale: 0.967;
 }
 
+.checkboxes {
+  display: flex;
+  gap: 1rem;
+  align-self: flex-start;
+}
+.checkboxes span {
+  opacity: 0.5;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
 @media (width < 750px) {
   #passForm .textContainer {
     flex-direction: column;
@@ -177,6 +188,7 @@ main .mainTitle h1 {
   line-height: 1.5;
 }
 main .mainTitle h2 {
+  font-size: clamp(0.7rem, 3vw, 1rem);
   opacity: 0.5;
 }
 main .mainTitle span {
