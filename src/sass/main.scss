@@ -1,6 +1,7 @@
 @forward "./resets";
 @forward "./buttons";
 @forward "./mediaQueries";
+@forward "./forms";
 @use "colors" as *;
 @use "variables" as *;
 
@@ -35,41 +36,6 @@ main {
     }
     span {
       color: $accentClr;
-    }
-  }
-}
-
-#passForm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: $smallGap;
-
-  .passIdentifier {
-    display: none;
-  }
-
-  .textContainer {
-    display: flex;
-    justify-content: center;
-    gap: $smallGap;
-
-    .inputText {
-      color: $secondaryClr;
-      background-color: $primaryClr;
-      font-size: 1.2rem;
-      text-align: center;
-      width: max(5vw, 15rem);
-    }
-  }
-
-  .passLengthContainer {
-    display: flex;
-    align-items: center;
-
-    input[id="passLength"] {
-      margin-right: $smallGap;
     }
   }
 }

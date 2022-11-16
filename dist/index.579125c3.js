@@ -14,16 +14,14 @@ passLength.oninput = function() {
 let totalRandomChar = "";
 btnGenerate.addEventListener("click", ()=>{
     textInput.value = "";
-    if (checkboxUpperLetter.checked && checkboxSym.checked && checkboxNum.checked) {
-        console.log(true);
-        totalRandomChar = checkboxSym.value + checkboxUpperLetter.value + checkboxNum.value;
-    } else if (checkboxUpperLetter.checked && checkboxSym.checked) totalRandomChar = checkboxSym.value + checkboxUpperLetter.value;
+    if (checkboxUpperLetter.checked && checkboxSym.checked && checkboxNum.checked) totalRandomChar = checkboxSym.value + checkboxUpperLetter.value + checkboxNum.value;
+    else if (checkboxUpperLetter.checked && checkboxSym.checked) totalRandomChar = checkboxSym.value + checkboxUpperLetter.value + checkboxLowLetter.value;
     else if (checkboxSym.checked && checkboxNum.checked) totalRandomChar = checkboxNum.value + checkboxSym.value + checkboxLowLetter.value;
     else if (checkboxUpperLetter.checked && checkboxSym.checked && checkboxNum.checked) totalRandomChar = checkboxSym.value + checkboxUpperLetter.value + checkboxNum.value;
     else if (checkboxUpperLetter.checked && checkboxNum.checked) totalRandomChar = checkboxNum.value + checkboxUpperLetter.value;
     else if (checkboxSym.checked) totalRandomChar = checkboxSym.value + checkboxLowLetter.value;
     else if (checkboxNum.checked) totalRandomChar = checkboxNum.value + checkboxLowLetter.value;
-    else if (checkboxUpperLetter.checked) totalRandomChar = checkboxUpperLetter.value;
+    else if (checkboxUpperLetter.checked) totalRandomChar = checkboxUpperLetter.value + checkboxLowLetter.value;
     else {
         checkboxLowLetter.checked;
         totalRandomChar = checkboxLowLetter.value;
