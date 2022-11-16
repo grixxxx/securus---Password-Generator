@@ -12,7 +12,7 @@
 83C:\Users\shayne\Desktop\passwordGenerator\node_modules\svgo\plugins\cleanupAttrs.js133130428634309650 0
 81C:\Users\shayne\Desktop\passwordGenerator\node_modules\css-tree\lib\syntax\pseudo133130428669234404 1
 80C:\Users\shayne\Desktop\passwordGenerator\node_modules\dotenv\lib\env-options.js133130428631029618 0
-54C:\Users\shayne\Desktop\passwordGenerator\package.json133130431424543731 0
+54C:\Users\shayne\Desktop\passwordGenerator\package.json133130443659468417 0
 93C:\Users\shayne\Desktop\passwordGenerator\node_modules\type-fest\source\iterable-element.d.ts133130428641299648 0
 79C:\Users\shayne\Desktop\passwordGenerator\node_modules\dom-serializer\README.md133130428636289661 0
 97C:\Users\shayne\Desktop\passwordGenerator\node_modules\@parcel\core\test\fixtures\invalid-targets133130428674047842 1
@@ -37,7 +37,7 @@
 59C:\Users\shayne\Desktop\passwordGenerator\package-lock.json133130439368931068 0
 110C:\Users\shayne\Desktop\passwordGenerator\node_modules\dom-serializer\node_modules\entities\lib\index.d.ts.map133130428637489616 0
 86C:\Users\shayne\Desktop\passwordGenerator\node_modules\@parcel\transformer-svg\LICENSE133130428617321946 0
-46C:\Users\shayne\Desktop\passwordGenerator\dist133130439760577574 1
+46C:\Users\shayne\Desktop\passwordGenerator\dist133130443668873723 1
 102C:\Users\shayne\Desktop\passwordGenerator\node_modules\@swc\helpers\lib\_class_private_field_update.js133130428646017226 0
 97C:\Users\shayne\Desktop\passwordGenerator\node_modules\utility-types\dist\aliases-and-guards.d.ts133130428638569620 0
 81C:\Users\shayne\Desktop\passwordGenerator\node_modules\css-tree\lib\syntax\config133130428671127889 1
@@ -1007,7 +1007,7 @@
 101C:\Users\shayne\Desktop\passwordGenerator\node_modules\@parcel\node-resolver-core\src\NodeResolver.js133130428659848765 0
 89C:\Users\shayne\Desktop\passwordGenerator\node_modules\type-fest\source\partial-deep.d.ts133130428645397429 0
 84C:\Users\shayne\Desktop\passwordGenerator\node_modules\@parcel\watcher\src\Signal.hh133130428646287278 0
-80C:\Users\shayne\Desktop\passwordGenerator\dist\passwordGenerator.59712999.js.map133130439516882084 0
+80C:\Users\shayne\Desktop\passwordGenerator\dist\passwordGenerator.59712999.js.map133130443668673747 0
 90C:\Users\shayne\Desktop\passwordGenerator\node_modules\type-fest\source\promise-value.d.ts133130428646497224 0
 103C:\Users\shayne\Desktop\passwordGenerator\node_modules\@swc\helpers\lib\_possible_constructor_return.js133130428658839225 0
 87C:\Users\shayne\Desktop\passwordGenerator\node_modules\@parcel\workers\test\integration133130428634319626 1
@@ -4171,10 +4171,10 @@
 66C:\Users\shayne\Desktop\passwordGenerator\node_modules\.bin\semver133130428705163738 0
 70C:\Users\shayne\Desktop\passwordGenerator\node_modules\.bin\semver.ps1133130428705153750 0
 66C:\Users\shayne\Desktop\passwordGenerator\node_modules\.bin\terser133130428705163738 0
-65C:\Users\shayne\Desktop\passwordGenerator\dist\index.1b40bb80.css133130439516582086 0
-69C:\Users\shayne\Desktop\passwordGenerator\dist\index.1b40bb80.css.map133130439516882084 0
-64C:\Users\shayne\Desktop\passwordGenerator\dist\index.579125c3.js133130439516732102 0
-68C:\Users\shayne\Desktop\passwordGenerator\dist\index.579125c3.js.map133130439516882084 0
+65C:\Users\shayne\Desktop\passwordGenerator\dist\index.1b40bb80.css133130443668253728 0
+69C:\Users\shayne\Desktop\passwordGenerator\dist\index.1b40bb80.css.map133130443668673747 0
+64C:\Users\shayne\Desktop\passwordGenerator\dist\index.579125c3.js133130443668263755 0
+68C:\Users\shayne\Desktop\passwordGenerator\dist\index.579125c3.js.map133130443668663734 0
 64C:\Users\shayne\Desktop\passwordGenerator\dist\index.b76d46ac.js133130439760227577 0
-57C:\Users\shayne\Desktop\passwordGenerator\dist\index.html133130439760217579 0
-76C:\Users\shayne\Desktop\passwordGenerator\dist\passwordGenerator.59712999.js133130439516722101 0
+57C:\Users\shayne\Desktop\passwordGenerator\dist\index.html133130443668853724 0
+76C:\Users\shayne\Desktop\passwordGenerator\dist\passwordGenerator.59712999.js133130443668263755 0
