@@ -1,7 +1,8 @@
 {
   "name": "passwordgenerator",
   "version": "1.0.0",
-  "source": "src/index.html",
+  "description": "",
+  "default": "dist/index.html",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html"
@@ -18,8 +19,6 @@
   },
   "homepage": "https://github.com/grixxxx/passwordGenerator#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.8.0",
-    "parcel": "^2.8.0",
-    "sass": "^1.56.1"
+    "parcel": "^2.8.0"
   }
 }
