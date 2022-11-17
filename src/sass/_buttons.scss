@@ -9,12 +9,11 @@
   color: $primaryClr;
   font-size: 1rem;
   font-family: $fontFam;
-  transition: all 0.3s ease-in;
+  transition: all 0.1s ease-in;
 
-  &:hover,
-  &:focus {
+  &:active {
     filter: brightness(2);
-    scale: 0.967;
+    scale: 0.927;
   }
 }
 
@@ -36,4 +35,13 @@
       font-weight: 300;
     }
   }
+}
+
+.copyBtn {
+  position: absolute;
+  right: 10.5rem;
+  top: 15px;
+  color: $secondaryClr;
+  opacity: 0.5;
+  cursor: pointer;
 }

@@ -7,6 +7,7 @@
   align-items: center;
   flex-direction: column;
   gap: $smallGap;
+  position: relative;
 
   .passIdentifier {
     display: none;
@@ -21,7 +22,7 @@
       color: $secondaryClr;
       background-color: $primaryClr;
       font-size: 1.2rem;
-      text-align: center;
+      padding-left: $smallGap;
       width: min(70vw, 20rem);
     }
   }

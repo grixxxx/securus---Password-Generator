@@ -130,18 +130,18 @@ table {
 }
 
 #generateBtn {
-  background-color: #2ec4b6;
+  background-color: #2374ff;
   border: none;
   padding: 1rem 2rem;
   cursor: pointer;
   color: #fdfffc;
   font-size: 1rem;
   font-family: "Kanit", sans-serif;
-  transition: all 0.3s ease-in;
+  transition: all 0.1s ease-in;
 }
-#generateBtn:hover, #generateBtn:focus {
+#generateBtn:active {
   filter: brightness(2);
-  scale: 0.967;
+  scale: 0.927;
 }
 
 .checkboxesContainer {
@@ -162,6 +162,15 @@ table {
   font-weight: 300;
 }
 
+.copyBtn {
+  position: absolute;
+  right: 10.5rem;
+  top: 15px;
+  color: #011627;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 @media (width < 750px) {
   #passForm .textContainer {
     flex-direction: column;
@@ -169,17 +178,63 @@ table {
   #passForm .textContainer .inputText {
     padding: 1rem;
   }
+  .copyBtn {
+    right: 1rem;
+    top: 17px;
+  }
 }
+#passForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+#passForm .passIdentifier {
+  display: none;
+}
+#passForm .textContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+#passForm .textContainer .inputText {
+  color: #011627;
+  background-color: #fdfffc;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  width: min(70vw, 20rem);
+}
+#passForm .passLengthContainer {
+  display: flex;
+  align-items: center;
+}
+#passForm .passLengthContainer input[id=passLength] {
+  margin-right: 1rem;
+}
+
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(207, 95%, 8%, 1)'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5'  stroke-width='1' stroke='none' fill='hsla(174, 62%, 47%, 0.05)'/></pattern></defs><rect width='800%' height='800%' transform='translate(-15,-12)' fill='url(%23a)'/></svg>");
+  background-image: linear-gradient(90deg, #1f1f1f 10%, #141414 100%);
+  background-size: 500%;
+  background-position: left;
   color: #fdfffc;
   font-family: "Kanit", sans-serif;
+  animation: backgroundClr 30s ease alternate infinite;
 }
 
+@keyframes backgroundClr {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
 main {
   display: flex;
   align-items: center;
@@ -199,37 +254,7 @@ main .mainTitle h2 {
   color: rgba(240, 248, 255, 0.393);
 }
 main .mainTitle span {
-  color: #2ec4b6;
-}
-
-#passForm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 1rem;
-}
-#passForm .passIdentifier {
-  display: none;
-}
-#passForm .textContainer {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-#passForm .textContainer .inputText {
-  color: #011627;
-  background-color: #fdfffc;
-  font-size: 1.2rem;
-  text-align: center;
-  width: max(5vw, 15rem);
-}
-#passForm .passLengthContainer {
-  display: flex;
-  align-items: center;
-}
-#passForm .passLengthContainer input[id=passLength] {
-  margin-right: 1rem;
+  color: #2374ff;
 }
 
 /*# sourceMappingURL=main.css.map */
