@@ -140,7 +140,7 @@ table {
   transition: all 0.1s ease-in;
 }
 #generateBtn:active {
-  filter: brightness(2);
+  filter: brightness(1.3);
   scale: 0.927;
 }
 
@@ -166,9 +166,18 @@ table {
   position: absolute;
   right: 10.5rem;
   top: 15px;
-  color: #011627;
-  opacity: 0.5;
+  opacity: 0.6;
   cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background-image: url("/src/assets/replicate.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  border-radius: 5px;
+}
+.copyBtn:hover {
+  opacity: 1;
 }
 
 @media (width < 750px) {
@@ -200,11 +209,13 @@ table {
   gap: 1rem;
 }
 #passForm .textContainer .inputText {
-  color: #011627;
+  color: #141414;
   background-color: #fdfffc;
   font-size: 1.2rem;
   padding-left: 1rem;
   width: min(70vw, 20rem);
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
 }
 #passForm .passLengthContainer {
   display: flex;
@@ -219,42 +230,54 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: linear-gradient(90deg, #1f1f1f 10%, #141414 100%);
-  background-size: 500%;
-  background-position: left;
+  background-color: #141414;
   color: #fdfffc;
   font-family: "Kanit", sans-serif;
-  animation: backgroundClr 30s ease alternate infinite;
+  position: relative;
 }
-
-@keyframes backgroundClr {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position: right;
-  }
-}
-main {
+body main {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
 }
-main .mainTitle {
+body main .mainTitle {
   text-align: center;
 }
-main .mainTitle h1 {
+body main .mainTitle h1 {
   font-weight: 700;
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-size: clamp(1.3rem, 5vw, 2.5rem);
   line-height: 1.5;
 }
-main .mainTitle h2 {
+body main .mainTitle h2 {
   font-size: clamp(0.7rem, 3vw, 1rem);
   color: rgba(240, 248, 255, 0.393);
 }
-main .mainTitle span {
+body main .mainTitle span {
   color: #2374ff;
+}
+body .copyActive {
+  position: absolute;
+  padding: 1rem;
+  background-color: #2374ff;
+  color: #fdfffc;
+  border-radius: 1rem;
+  top: -3rem;
+  transition: 0.3s ease-in;
+}
+body footer {
+  position: absolute;
+  bottom: 1.5rem;
+  text-align: center;
+  font-size: 0.7rem;
+  opacity: 0.3;
+}
+body footer a {
+  text-decoration: none;
+  color: #2374ff;
+}
+body footer a:hover {
+  filter: brightness(2);
 }
 
 /*# sourceMappingURL=main.css.map */

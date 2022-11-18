@@ -10,44 +10,60 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: linear-gradient(90deg, #1f1f1f 10%, #141414 100%);
-  background-size: 500%;
-  background-position: left;
+  background-color: $secondaryClr;
   color: $primaryClr;
   font-family: $fontFam;
-  animation: backgroundClr 30s ease alternate infinite;
-}
+  position: relative;
 
-@keyframes backgroundClr {
-  0% {
-    background-position: left;
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: $mediumGap;
+
+    .mainTitle {
+      text-align: center;
+
+      h1 {
+        font-weight: 700;
+        font-size: clamp(1.3rem, 5vw, 2.5rem);
+        line-height: 1.5;
+      }
+
+      h2 {
+        font-size: clamp(0.7rem, 3vw, 1rem);
+        color: rgba(240, 248, 255, 0.393);
+      }
+      span {
+        color: $accentClr;
+      }
+    }
   }
-  100% {
-    background-position: right;
+
+  .copyActive {
+    position: absolute;
+    padding: $smallGap;
+    background-color: $accentClr;
+    color: $primaryClr;
+    border-radius: 1rem;
+    top: -3rem;
+    transition: 0.3s ease-in;
   }
-}
 
-main {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: $mediumGap;
-
-  .mainTitle {
+  footer {
+    position: absolute;
+    bottom: 1.5rem;
     text-align: center;
+    font-size: 0.7rem;
+    opacity: 0.3;
 
-    h1 {
-      font-weight: 700;
-      font-size: clamp(1.5rem, 5vw, 2.5rem);
-      line-height: 1.5;
-    }
-
-    h2 {
-      font-size: clamp(0.7rem, 3vw, 1rem);
-      color: rgba(240, 248, 255, 0.393);
-    }
-    span {
+    a {
+      text-decoration: none;
       color: $accentClr;
+
+      &:hover {
+        filter: brightness(2);
+      }
     }
   }
 }

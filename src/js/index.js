@@ -21,6 +21,12 @@ const checkboxSym = document.querySelector("#checkboxSym");
 const checkboxLowLetter = document.querySelector("#checkboxLowLetter");
 const checkboxUpperLetter = document.querySelector("#checkboxUpperLetter");
 
+const copyActive = document.querySelector(".copyActive");
+
+function removeCopyActive() {
+  copyActive.style.cssText = "top: -3rem";
+}
+
 btnGenerate.addEventListener("click", () => {
   textInput.value = "";
 
@@ -33,7 +39,10 @@ btnGenerate.addEventListener("click", () => {
 
   switch (availableChar.length) {
     case 0:
-      alert("ERROR!");
+      copyActive.textContent = "Error ! Please include some characters.";
+      copyActive.style.cssText = "top: 2rem; background-color: red";
+      setTimeout(removeCopyActive, 2000);
+      textInput.value = "";
       break;
     default:
       for (let i = 0; i < passLength.value; i++) {
@@ -44,4 +53,23 @@ btnGenerate.addEventListener("click", () => {
   }
 });
 
-console.log(numChar);
+const copyBtn = document.querySelector(".copyBtn");
+
+copyBtn.addEventListener("click", async () => {
+  copyActive.style.cssText = "background-color: red; top: 2rem";
+
+  setTimeout(removeCopyActive, 2000);
+
+  navigator.clipboard.writeText(textInput.value);
+
+  switch (textInput.value) {
+    case "":
+      copyActive.textContent = "Error ! Please Generate Password.";
+      copyActive.style.backgroundColor = "red";
+      break;
+    default:
+      copyActive.textContent = "copied to clipboard!";
+      copyActive.style.backgroundColor = "#2374ff";
+      break;
+  }
+});

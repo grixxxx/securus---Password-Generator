@@ -35,6 +35,9 @@ btnGenerate.addEventListener("click", ()=>{
             break;
     }
 });
-console.log(numChar);
+const copyBtn = document.querySelector(".copyBtn");
+copyBtn.addEventListener("click", async ()=>{
+    textInput.value = navigator.clipboard.writeText(textInput.value);
+});
 
 //# sourceMappingURL=index.de5c0784.js.map
