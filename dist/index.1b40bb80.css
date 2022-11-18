@@ -1,0 +1,208 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#generateBtn {
+  cursor: pointer;
+  color: #fdfffc;
+  background-color: #2374ff;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: Kanit, sans-serif;
+  font-size: 1rem;
+  transition: all .1s ease-in;
+}
+
+#generateBtn:active {
+  filter: brightness(1.3);
+  scale: .927;
+}
+
+.checkboxesContainer {
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 1rem;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.checkboxesContainer .checkboxes {
+  gap: 1rem;
+  display: flex;
+}
+
+.checkboxesContainer .checkboxes span {
+  opacity: .5;
+  margin-left: .5rem;
+  font-size: .8rem;
+  font-weight: 300;
+}
+
+.copyBtn {
+  opacity: .6;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background-image: url("replicate.72f3e4c8.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  top: 15px;
+  right: 10.5rem;
+}
+
+.copyBtn:hover {
+  opacity: 1;
+}
+
+@media (max-width: 749.999px) {
+  #passForm .textContainer {
+    flex-direction: column;
+  }
+
+  #passForm .textContainer .inputText {
+    padding: 1rem;
+  }
+
+  .copyBtn {
+    top: 17px;
+    right: 1rem;
+  }
+}
+
+#passForm {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+  position: relative;
+}
+
+#passForm .passIdentifier {
+  display: none;
+}
+
+#passForm .textContainer {
+  justify-content: center;
+  gap: 1rem;
+  display: flex;
+}
+
+#passForm .textContainer .inputText {
+  color: #141414;
+  width: min(70vw, 20rem);
+  background-color: #fdfffc;
+  padding-left: 1rem;
+  font-family: Kanit, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+#passForm .passLengthContainer {
+  align-items: center;
+  display: flex;
+}
+
+#passForm .passLengthContainer input[id="passLength"] {
+  margin-right: 1rem;
+}
+
+body {
+  min-height: 100vh;
+  color: #fdfffc;
+  background-color: #141414;
+  justify-content: center;
+  align-items: center;
+  font-family: Kanit, sans-serif;
+  display: flex;
+  position: relative;
+}
+
+body main {
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+body main .mainTitle {
+  text-align: center;
+}
+
+body main .mainTitle h1 {
+  font-size: clamp(1.3rem, 5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+body main .mainTitle h2 {
+  color: #f0f8ff64;
+  font-size: clamp(.7rem, 3vw, 1rem);
+}
+
+body main .mainTitle span {
+  color: #2374ff;
+}
+
+body .copyActive {
+  color: #fdfffc;
+  background-color: #2374ff;
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: all .3s ease-in;
+  position: absolute;
+  top: -3rem;
+}
+
+body footer {
+  text-align: center;
+  opacity: .3;
+  font-size: .7rem;
+  position: absolute;
+  bottom: 1.5rem;
+}
+
+body footer a {
+  color: #2374ff;
+  text-decoration: none;
+}
+
+body footer a:hover {
+  filter: brightness(2);
+}
+
+/*# sourceMappingURL=index.1b40bb80.css.map */
