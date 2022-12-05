@@ -46,12 +46,10 @@ btnGenerate.addEventListener("click", () => {
       break;
     default:
       for (let i = 0; i < passLength.value; i++) {
-        const generatePassArray = new Uint32Array(1); // Math.floor(Math.random() * availableChar.length);
-        self.crypto.getRandomValues(generatePassArray);
-        const decimal = parseFloat("0." + generatePassArray[0].toString()); // The filthiest decimalizer in existance
-        console.log(decimal);
-        const generatePass = Math.floor(decimal * availableChar.length);
-        console.log(generatePass);
+        // const generatePassArray = new Uint32Array(1)
+        // self.crypto.getRandomValues(generatePassArray);
+        // const decimal = parseFloat("0." + generatePassArray[0].toString()); // The filthiest decimalizer in existance
+        const generatePass = Math.floor(Math.random() * availableChar.length);
         textInput.value += availableChar[generatePass];
       }
       break;
